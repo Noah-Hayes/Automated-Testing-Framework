@@ -51,7 +51,7 @@ class Asteroid:
 
 
 class GameSession:
-    # Testable application core extracted from game loop rules
+    """Testable application core extracted from game loop rules"""
 
     def __init__(self) -> None:
         self.player = Player()
@@ -114,11 +114,11 @@ class GameSession:
 # 2. Reusable Testing Framework Components
 
 class TestAssertionError(AssertionError):
-            # Raised when a framework assertion fails
+    """Raised when a framework assertion fails"""
 
 
 class Assert:
-    # Reusable assertion helpers with clear diagnostic messages
+    """Reusable assertion helpers with clear diagnostic messages"""
 
     @staticmethod
     def equal(actual: Any, expected: Any, message: str = "") -> None:
@@ -167,16 +167,15 @@ class TestResult:
 
 
 class TestSuite:
-    # Base class for grouping reusable automated test cases
+    """Base class for grouping reusable automated test cases"""
 
     name: str = "BaseSuite"
 
     def setup(self) -> None:
-            # Override to initialize fresh state before each test
+        """Override to initialize fresh state before each test"""
 
     def teardown(self) -> None:
-        # Override to clean up after each test
-        """Override to clean up after each test."""
+        """Override to clean up after each test"""
 
     def discoverTests(self) -> list[str]:
         return sorted(
@@ -186,7 +185,7 @@ class TestSuite:
 
 
 class TestRunner:
-    # Executes test suites and generates structured pass/fail reports
+    """Executes test suites and generates structured pass/fail reports"""
 
     def __init__(self) -> None:
         self.suites: list[TestSuite] = []
