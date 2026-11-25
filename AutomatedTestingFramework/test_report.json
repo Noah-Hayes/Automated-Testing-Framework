@@ -1,0 +1,45 @@
+{
+  "total": 5,
+  "passed": 5,
+  "failed": 0,
+  "errors": 0,
+  "pass_rate_pct": 100.0,
+  "overall_status": "PASS",
+  "results": [
+    {
+      "suite": "MovementTests",
+      "name": "test_forward_movement_moves_upward_at_zero_angle",
+      "status": "PASS",
+      "duration_ms": 0.014,
+      "message": ""
+    },
+    {
+      "suite": "MovementTests",
+      "name": "test_screen_wrap_right_edge",
+      "status": "PASS",
+      "duration_ms": 0.003,
+      "message": ""
+    },
+    {
+      "suite": "MovementTests",
+      "name": "test_valid_rotation_angles",
+      "status": "PASS",
+      "duration_ms": 0.002,
+      "message": ""
+    },
+    {
+      "suite": "CombatAndScoringTests",
+      "name": "test_invalid_asteroid_rank_raises_value_error",
+      "status": "PASS",
+      "duration_ms": 0.007,
+      "message": ""
+    },
+    {
+      "suite": "CombatAndScoringTests",
+      "name": "test_valid_asteroid_ranks_scoring_and_splitting",
+      "status": "PASS",
+      "duration_ms": 0.016,
+      "message": ""
+    }
+  ]
+}
